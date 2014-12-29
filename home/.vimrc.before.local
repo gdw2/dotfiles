@@ -1,0 +1,4 @@
+
+
+" Enable powerline characters
+let g:airline_powerline_fonts=1

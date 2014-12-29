@@ -1,0 +1,20 @@
+map tl :tabnext<CR>
+map th :tabprev<CR>
+map tn :tabnew<CR>
+map td :tabclose<CR>
+
+" Hopefully this will make all diffs whitespace indifferent
+set diffopt+=iwhite
+
+" suppress lusty juggler complaints about ruby not being installed
+let g:LustyJugglerSuppressRubyWarning = 1
+
+set encoding=utf-8
+let g:Powerline_symbols="fancy"
+
+set shiftwidth=2                " Use indents of 2 spaces
+set tabstop=2                   " An indentation every two columns
+set softtabstop=2               " Let backspace delete indent
+
+
+UnBundle 'spf13/PIV'
