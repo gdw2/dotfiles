@@ -1,2 +1,10 @@
---type-add js=.coffee
---type-set coffee=.coffee
+--type-add 
+js=.coffee
+--type-set 
+coffee=.coffee
+--type-add 
+html=.dust
+--type-set 
+dust=.dust
+--ignore-dir=node_modules
+--ignore-dir=tmp
