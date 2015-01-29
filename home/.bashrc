@@ -16,3 +16,12 @@ source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
 if [ "$(uname -o)" == "Cygwin" ]; then
   export DISPLAY=:0
 fi
+
+# avoid duplicates..
+export HISTCONTROL=ignoredups:erasedups
+
+# append history entries..
+shopt -s histappend
+
+# After each command, save and reload history
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
