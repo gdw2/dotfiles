@@ -12,3 +12,12 @@ export PATH=$PATH:~/.gem/ruby/2.0.0/bin
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
+
+# avoid duplicates..
+export HISTCONTROL=ignoredups:erasedups
+
+# append history entries..
+shopt -s histappend
+
+# After each command, save and reload history
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"

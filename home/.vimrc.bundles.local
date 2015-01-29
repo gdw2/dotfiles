@@ -1,2 +1,3 @@
 ""Bundle 'gdw2/vimp4python'
 Plugin 'ivanov/vim-ipython'
+Plugin 'kana/vim-fakeclip'
