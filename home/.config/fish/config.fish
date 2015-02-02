@@ -1,2 +1,2 @@
 
-source "$HOME/.homesick/repos/homeshick/homeshick.fish"
+. "$HOME/.homesick/repos/homeshick/homeshick.fish"
