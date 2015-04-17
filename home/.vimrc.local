@@ -16,5 +16,6 @@ set shiftwidth=2                " Use indents of 2 spaces
 set tabstop=2                   " An indentation every two columns
 set softtabstop=2               " Let backspace delete indent
 
+let g:bufferline_echo=0 " See https://github.com/spf13/spf13-vim/issues/540
 
 UnBundle 'spf13/PIV'
