@@ -20,4 +20,17 @@ let g:bufferline_echo=0 " See https://github.com/spf13/spf13-vim/issues/540
 
 set nofoldenable " don't automatically fold code
 
+"Bundle 'joonty/vdebug.git'
+"let g:vdebug_options={}
+"let g:vdebug_options['server'] = "0.0.0.0"
+"let g:vdebug_options['path_maps'] = {"/app":"/home/ec2-user/app"}
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
+
+unlet g:ctrlp_custom_ignore
+unlet g:ctrlp_user_command
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+imap jj <Esc>
+
 UnBundle 'spf13/PIV'
