@@ -77,5 +77,5 @@ else
     [ -x /usr/bin/zeitgeist-datahub ] && /usr/bin/zeitgeist-datahub &
     [ -x /usr/bin/xterm ] && /usr/bin/xterm &
     [ -x /usr/bin/fbxkb ] && /usr/bin/fbxkb &
-    #[ -x /usr/bin/fbpanel ] && exec /usr/bin/fbpanel -p multiwindow
+    [ -x /usr/bin/fbpanel ] && exec /usr/bin/fbpanel -p multiwindow
 fi
