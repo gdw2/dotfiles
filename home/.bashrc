@@ -26,4 +26,8 @@ shopt -s histappend
 # After each command, save and reload history
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
-export PATH=$PATH:`cygpath "C:\Users\gwarner\Downloads\adt-bundle-windows-x86_64-20140702\sdk\platform-tools"`
+if [ "$(expr substr $(uname -s) 1 9)" == "CYGWIN_NT"  ]; then
+  export PATH=$PATH:`cygpath "C:\Users\gwarner\Downloads\adt-bundle-windows-x86_64-20140702\sdk\platform-tools"`
+fi
+
+export TERM="xterm-256color"
