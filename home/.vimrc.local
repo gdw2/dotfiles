@@ -31,6 +31,13 @@ unlet g:ctrlp_custom_ignore
 unlet g:ctrlp_user_command
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
+"Syntax checking too slow
+let g:syntastic_mode_map = { 'mode': 'passive' }
+nnoremap <Leader>sc :SyntasticCheck<CR> 
 imap jj <Esc>
+
+let g:pymode_folding = 1
+
+set guifont=Sauce_Code_Powerline:h11:cANSI
 
 UnBundle 'spf13/PIV'
