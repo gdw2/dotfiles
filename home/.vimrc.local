@@ -38,6 +38,7 @@ imap jj <Esc>
 
 let g:pymode_folding = 1
 
+" See https://github.com/powerline/fonts
 set guifont=Sauce_Code_Powerline:h11:cANSI
 
 UnBundle 'spf13/PIV'
