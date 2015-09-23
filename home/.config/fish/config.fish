@@ -1,4 +1,5 @@
 
 . "$HOME/.homesick/repos/homeshick/homeshick.fish"
 set PATH ~/.local/bin $PATH
-set EDITOR vim
+set -x EDITOR vim
+set -x HOSTNAME (hostname)
