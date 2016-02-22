@@ -2,6 +2,7 @@
 Plugin 'ivanov/vim-ipython'
 Plugin 'kana/vim-fakeclip'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'Konfekt/FastFold'
 Plugin 'python-rope/ropevim'
 UnBundle 'spf13/vim-autoclose'
 UnBundle 'jiangmiao/auto-pairs'
